@@ -20,6 +20,8 @@ import com.amitinside.core.api.IPollutionPublishService;
 @Component
 public final class PollutionPublishService implements IPollutionPublishService, ConfigurableComponent {
 
+	private static final String DATA_PUBLISH_RATE = "pollution.data.rate";
+
 	private static final String MQTT_TOPIC = "pollution.data.mqtt.topic";
 
 	@Reference(bind = "bindDataService", unbind = "unbindDataService")
@@ -28,6 +30,8 @@ public final class PollutionPublishService implements IPollutionPublishService, 
 	private Future<?> handle;
 
 	private Map<String, Object> m_properties;
+
+	private int rate;
 
 	private String topic;
 
@@ -54,6 +58,7 @@ public final class PollutionPublishService implements IPollutionPublishService, 
 
 	private void extractConfiguration() {
 		this.topic = (String) this.m_properties.get(MQTT_TOPIC);
+		this.rate = (int) this.m_properties.get(DATA_PUBLISH_RATE);
 	}
 
 	@Override
@@ -69,7 +74,7 @@ public final class PollutionPublishService implements IPollutionPublishService, 
 			} catch (final Exception e) {
 				e.printStackTrace();
 			}
-		}, 2, TimeUnit.SECONDS);
+		}, this.rate, TimeUnit.SECONDS);
 	}
 
 	public synchronized void unbindDataService(final DataService dataService) {
