@@ -1,5 +1,5 @@
 #Deployment Plugin Project File
-#Tue Mar 08 19:53:00 CET 2016
+#Tue Mar 08 19:54:15 CET 2016
 build.ant.name=<.>/com.amitinside.pollution.sense.application_build.xml
 build.dp.file=<.>/com.amitinside.pollution.sense.application.dp
 build.location=
@@ -7,33 +7,34 @@ bundles.0.bundle_path=/Users/AMIT/github/bosch-hack-challenge/com.amitinside.cor
 bundles.0.customizer=false
 bundles.0.headers.count=0
 bundles.0.missing=false
-bundles.0.name=bundles/com.amitinside.core.api-0.0.1-SNAPSHOT.jar
+bundles.0.name=com.amitinside.core.api-0.0.1-SNAPSHOT.jar
 bundles.0.symbolic_name=com.amitinside.core.api
 bundles.0.version=0.0.1.SNAPSHOT
 bundles.1.bundle_path=/Users/AMIT/github/bosch-hack-challenge/com.amitinside.core.provider/target/com.amitinside.core.provider-0.0.1-SNAPSHOT.jar
 bundles.1.customizer=false
 bundles.1.headers.count=0
 bundles.1.missing=false
-bundles.1.name=bundles/com.amitinside.core.provider-0.0.1-SNAPSHOT.jar
+bundles.1.name=com.amitinside.core.provider-0.0.1-SNAPSHOT.jar
 bundles.1.symbolic_name=com.amitinside.core.provider
 bundles.1.version=0.0.1.SNAPSHOT
 bundles.2.bundle_path=/Users/AMIT/github/bosch-hack-challenge/com.amitinside.mock.data.provider/target/com.amitinside.mock.data.provider-0.0.1-SNAPSHOT.jar
 bundles.2.customizer=false
 bundles.2.headers.count=0
 bundles.2.missing=false
-bundles.2.name=bundles/com.amitinside.mock.data.provider-0.0.1-SNAPSHOT.jar
+bundles.2.name=com.amitinside.mock.data.provider-0.0.1-SNAPSHOT.jar
 bundles.2.symbolic_name=com.amitinside.mock.data.provider
 bundles.2.version=0.0.1.SNAPSHOT
 bundles.3.bundle_path=/Users/AMIT/github/bosch-hack-challenge/com.amitinside.pollution.sense.application/target/com.amitinside.pollution.sense.application-0.0.1-SNAPSHOT.jar
 bundles.3.customizer=false
 bundles.3.headers.count=0
 bundles.3.missing=false
-bundles.3.name=bundles/com.amitinside.pollution.sense.application-0.0.1-SNAPSHOT.jar
+bundles.3.name=com.amitinside.pollution.sense.application-0.0.1-SNAPSHOT.jar
 bundles.3.symbolic_name=com.amitinside.pollution.sense.application
 bundles.3.version=0.0.1.SNAPSHOT
 bundles.count=4
 certificates.count=0
 general.signbundles=false
+headers.contact.address=admin@amitinside.com
 headers.description=Pollution Sensing Application
 headers.other.headers=
 headers.symbolic.name=com.amitinside.pollution.sense.application
