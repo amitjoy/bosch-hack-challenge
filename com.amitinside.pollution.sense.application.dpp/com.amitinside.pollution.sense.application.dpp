@@ -1,0 +1,13 @@
+#Deployment Plugin Project File
+#Tue Mar 08 19:47:47 CET 2016
+build.ant.name=<.>/com.amitinside.pollution.sense.application_build.xml
+build.dp.file=<.>/com.amitinside.pollution.sense.application.dp
+build.location=
+bundles.count=0
+certificates.count=0
+general.signbundles=false
+headers.other.headers=
+headers.symbolic.name=com.amitinside.pollution.sense.application
+headers.version=1.0.0
+resources.count=0
+
