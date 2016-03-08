@@ -5,6 +5,14 @@
 	<artifactId>com.amitinside.core.provider</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>bundle</packaging>
+
+	<parent>
+		<groupId>com.amitinside</groupId>
+		<artifactId>com.amitinside.pollution.sense.application.parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../com.amitinside.pollution.sense.application.parent/pom.xml</relativePath>
+	</parent>
+
 	<dependencies>
 		<dependency>
 			<groupId>com.amitinside</groupId>
@@ -30,7 +38,7 @@
 			<artifactId>org.eclipse.kura.core</artifactId>
 			<version>1.0.5-SNAPSHOT</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.eclipse.kura</groupId>
 			<artifactId>org.eclipse.kura.api</artifactId>
