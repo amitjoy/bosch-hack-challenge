@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="com.amitinside.core.impl.PollutionPublishService" activate="activate" deactivate="deactivate">
-    <implementation class="com.amitinside.core.impl.PollutionPublishService"/>
-    <property name="service.pid" value="com.amitinside.core.impl.PollutionPublishService"/>
-    <reference name="dataService" interface="org.eclipse.kura.data.DataService" cardinality="1..1" policy="static" bind="bindDataService" unbind="unbindDataService"/>
-</scr:component>
