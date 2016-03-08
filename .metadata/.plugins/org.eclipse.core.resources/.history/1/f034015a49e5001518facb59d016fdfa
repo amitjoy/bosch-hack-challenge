@@ -1,0 +1,9 @@
+package com.amitinside.pollution.sense.application;
+
+import org.osgi.framework.BundleContext;
+
+public final class PollutionSense {
+
+
+
+}

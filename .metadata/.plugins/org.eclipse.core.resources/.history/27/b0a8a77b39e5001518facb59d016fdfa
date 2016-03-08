@@ -1,0 +1,10 @@
+package com.amitinside.core.api;
+
+public final class PollutionData {
+	
+	private final double no2;
+	private final double so2;
+	private final double co;
+	private final double o3;
+
+}

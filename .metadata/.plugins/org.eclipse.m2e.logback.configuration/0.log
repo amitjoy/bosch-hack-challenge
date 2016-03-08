@@ -1,0 +1,132 @@
+2016-03-08 14:13:08,385 [main] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache file is out-of-date. Remote download required.
+2016-03-08 14:38:39,356 [main] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache file is not out-of-date. No remote download required.
+2016-03-08 15:21:30,159 [Worker-47] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.amitinside:com.amitinside.core.api:0.0.1-SNAPSHOT @ /Users/AMIT/sandbox_enroute/com.amitinside.core.api/pom.xml.
+2016-03-08 15:21:30,376 [Worker-47] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /com.amitinside.core.api/src/main/java
+2016-03-08 15:21:30,378 [Worker-47] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /com.amitinside.core.api/src/main/resources
+2016-03-08 15:21:30,379 [Worker-47] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /com.amitinside.core.api/src/test/java
+2016-03-08 15:21:30,379 [Worker-47] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /com.amitinside.core.api/src/test/resources
+2016-03-08 15:27:41,213 [Worker-43] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-03-08 15:27:43,193 [Worker-43] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/mojo/findbugs-maven-plugin/maven-metadata.xml
+2016-03-08 15:27:43,349 [Worker-43] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/mojo/findbugs-maven-plugin/maven-metadata.xml
+2016-03-08 15:27:43,566 [Worker-43] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/mojo/findbugs-maven-plugin/3.0.3/findbugs-maven-plugin-3.0.3.pom
+2016-03-08 15:27:43,634 [Worker-43] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/mojo/findbugs-maven-plugin/3.0.3/findbugs-maven-plugin-3.0.3.pom
+2016-03-08 15:27:43,738 [Worker-43] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/mojo/mojo-parent/35/mojo-parent-35.pom
+2016-03-08 15:27:43,854 [Worker-43] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/mojo/mojo-parent/35/mojo-parent-35.pom
+2016-03-08 15:27:43,910 [Worker-43] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/mojo/findbugs-maven-plugin/3.0.3/findbugs-maven-plugin-3.0.3.jar
+2016-03-08 15:27:44,412 [Worker-43] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/mojo/findbugs-maven-plugin/3.0.3/findbugs-maven-plugin-3.0.3.jar
+2016-03-08 15:27:44,910 [Worker-43] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.amitinside:com.amitinside.core.api:0.0.1-SNAPSHOT @ /Users/AMIT/sandbox_enroute/com.amitinside.core.api/pom.xml.
+2016-03-08 15:27:45,087 [Worker-43] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /com.amitinside.core.api/src/main/java
+2016-03-08 15:27:45,087 [Worker-43] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /com.amitinside.core.api/src/main/resources
+2016-03-08 15:27:45,088 [Worker-43] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /com.amitinside.core.api/src/test/java
+2016-03-08 15:27:45,088 [Worker-43] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /com.amitinside.core.api/src/test/resources
+2016-03-08 15:27:45,133 [Worker-43] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 3 sec
+2016-03-08 15:28:00,157 [Worker-39] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-03-08 15:28:01,066 [Worker-39] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using DEFAULT lifecycle mapping for MavenProject: com.amitinside:com.amitinside.core.api:0.0.1-SNAPSHOT @ /Users/AMIT/sandbox_enroute/com.amitinside.core.api/pom.xml.
+2016-03-08 15:28:01,212 [Worker-39] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /com.amitinside.core.api/src/main/java
+2016-03-08 15:28:01,212 [Worker-39] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /com.amitinside.core.api/src/main/resources
+2016-03-08 15:28:01,212 [Worker-39] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /com.amitinside.core.api/src/test/java
+2016-03-08 15:28:01,212 [Worker-39] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /com.amitinside.core.api/src/test/resources
+2016-03-08 15:28:01,239 [Worker-39] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2016-03-08 15:28:59,507 [Worker-39] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.amitinside:com.amitinside.core.impl:0.0.1-SNAPSHOT @ /Users/AMIT/sandbox_enroute/com.amitinside.core.impl/pom.xml.
+2016-03-08 15:28:59,626 [Worker-39] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /com.amitinside.core.impl/src/main/java
+2016-03-08 15:28:59,626 [Worker-39] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /com.amitinside.core.impl/src/main/resources
+2016-03-08 15:28:59,626 [Worker-39] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /com.amitinside.core.impl/src/test/java
+2016-03-08 15:28:59,626 [Worker-39] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /com.amitinside.core.impl/src/test/resources
+2016-03-08 15:33:40,644 [Worker-40] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-03-08 15:33:41,010 [Worker-40] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.amitinside:com.amitinside.core.impl:0.0.1-SNAPSHOT @ /Users/AMIT/sandbox_enroute/com.amitinside.core.impl/pom.xml.
+2016-03-08 15:33:41,115 [Worker-40] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /com.amitinside.core.impl/src/main/java
+2016-03-08 15:33:41,115 [Worker-40] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /com.amitinside.core.impl/src/main/resources
+2016-03-08 15:33:41,116 [Worker-40] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /com.amitinside.core.impl/src/test/java
+2016-03-08 15:33:41,116 [Worker-40] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /com.amitinside.core.impl/src/test/resources
+2016-03-08 15:33:41,166 [Worker-40] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2016-03-08 15:35:48,075 [Worker-42] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-03-08 15:35:48,379 [Worker-42] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.amitinside:com.amitinside.core.impl:0.0.1-SNAPSHOT @ /Users/AMIT/sandbox_enroute/com.amitinside.core.impl/pom.xml.
+2016-03-08 15:35:48,482 [Worker-42] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /com.amitinside.core.impl/src/main/java
+2016-03-08 15:35:48,482 [Worker-42] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /com.amitinside.core.impl/src/main/resources
+2016-03-08 15:35:48,482 [Worker-42] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /com.amitinside.core.impl/src/test/java
+2016-03-08 15:35:48,483 [Worker-42] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /com.amitinside.core.impl/src/test/resources
+2016-03-08 15:35:48,524 [Worker-42] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2016-03-08 15:39:25,902 [Worker-40] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.amitinside:com.amitinside.mock.data.provider:0.0.1-SNAPSHOT @ /Users/AMIT/sandbox_enroute/com.amitinside.mock.data.provider/pom.xml.
+2016-03-08 15:39:26,119 [Worker-40] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /com.amitinside.mock.data.provider/src/main/java
+2016-03-08 15:39:26,119 [Worker-40] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /com.amitinside.mock.data.provider/src/main/resources
+2016-03-08 15:39:26,119 [Worker-40] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /com.amitinside.mock.data.provider/src/test/java
+2016-03-08 15:39:26,119 [Worker-40] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /com.amitinside.mock.data.provider/src/test/resources
+2016-03-08 15:39:33,919 [Worker-41] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/osgi/org.osgi.compendium/5.0.0/org.osgi.compendium-5.0.0.pom
+2016-03-08 15:39:33,985 [Worker-41] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/osgi/org.osgi.compendium/5.0.0/org.osgi.compendium-5.0.0.pom
+2016-03-08 15:39:34,135 [Worker-41] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/osgi/org.osgi.compendium/5.0.0/org.osgi.compendium-5.0.0.jar
+2016-03-08 15:39:35,005 [Worker-41] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/osgi/org.osgi.compendium/5.0.0/org.osgi.compendium-5.0.0.jar
+2016-03-08 15:41:19,641 [Worker-45] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/felix/org.apache.felix.scr.annotations/1.9.12/org.apache.felix.scr.annotations-1.9.12.pom
+2016-03-08 15:41:19,704 [Worker-45] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/felix/org.apache.felix.scr.annotations/1.9.12/org.apache.felix.scr.annotations-1.9.12.pom
+2016-03-08 15:41:19,814 [Worker-45] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/felix/org.apache.felix.scr.annotations/1.9.12/org.apache.felix.scr.annotations-1.9.12.jar
+2016-03-08 15:41:19,868 [Worker-45] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/felix/org.apache.felix.scr.annotations/1.9.12/org.apache.felix.scr.annotations-1.9.12.jar
+2016-03-08 15:41:29,129 [Worker-8] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-03-08 15:41:29,615 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.amitinside:com.amitinside.core.provider:0.0.1-SNAPSHOT @ /Users/AMIT/sandbox_enroute/com.amitinside.core.provider/pom.xml.
+2016-03-08 15:41:29,786 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /com.amitinside.core.provider/src/main/java
+2016-03-08 15:41:29,787 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /com.amitinside.core.provider/src/main/resources
+2016-03-08 15:41:29,787 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /com.amitinside.core.provider/src/test/java
+2016-03-08 15:41:29,788 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /com.amitinside.core.provider/src/test/resources
+2016-03-08 15:41:29,856 [Worker-8] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2016-03-08 15:42:39,448 [Worker-45] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/eclipse/kura/org.eclipse.kura.core/1.4.0/org.eclipse.kura.core-1.4.0.pom
+2016-03-08 15:42:39,457 [Worker-45] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.eclipse.kura:org.eclipse.kura.core:jar:1.4.0 is missing, no dependency information available
+2016-03-08 15:42:39,826 [Worker-45] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/eclipse/kura/org.eclipse.kura.core/1.4.0/org.eclipse.kura.core-1.4.0.jar
+2016-03-08 15:42:46,892 [Worker-40] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-03-08 15:42:47,206 [Worker-40] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.amitinside:com.amitinside.core.provider:0.0.1-SNAPSHOT @ /Users/AMIT/sandbox_enroute/com.amitinside.core.provider/pom.xml.
+2016-03-08 15:42:47,212 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.eclipse.kura:org.eclipse.kura.core:jar:1.4.0 is missing, no dependency information available
+2016-03-08 15:42:47,329 [Worker-40] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /com.amitinside.core.provider/src/main/java
+2016-03-08 15:42:47,330 [Worker-40] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /com.amitinside.core.provider/src/main/resources
+2016-03-08 15:42:47,330 [Worker-40] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /com.amitinside.core.provider/src/test/java
+2016-03-08 15:42:47,330 [Worker-40] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /com.amitinside.core.provider/src/test/resources
+2016-03-08 15:42:47,390 [Worker-40] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2016-03-08 15:43:41,950 [Worker-8] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-03-08 15:43:42,216 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.amitinside:com.amitinside.core.provider:0.0.1-SNAPSHOT @ /Users/AMIT/sandbox_enroute/com.amitinside.core.provider/pom.xml.
+2016-03-08 15:43:42,312 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /com.amitinside.core.provider/src/main/java
+2016-03-08 15:43:42,312 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /com.amitinside.core.provider/src/main/resources
+2016-03-08 15:43:42,312 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /com.amitinside.core.provider/src/test/java
+2016-03-08 15:43:42,312 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /com.amitinside.core.provider/src/test/resources
+2016-03-08 15:43:42,340 [Worker-8] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2016-03-08 15:47:15,796 [Worker-43] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-03-08 15:47:15,841 [Worker-43] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.amitinside:com.amitinside.mock.data.provider:0.0.1-SNAPSHOT @ /Users/AMIT/sandbox_enroute/com.amitinside.mock.data.provider/pom.xml.
+2016-03-08 15:47:15,898 [Worker-43] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /com.amitinside.mock.data.provider/src/main/java
+2016-03-08 15:47:15,898 [Worker-43] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /com.amitinside.mock.data.provider/src/main/resources
+2016-03-08 15:47:15,898 [Worker-43] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /com.amitinside.mock.data.provider/src/test/java
+2016-03-08 15:47:15,898 [Worker-43] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /com.amitinside.mock.data.provider/src/test/resources
+2016-03-08 15:47:15,942 [Worker-43] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2016-03-08 15:48:52,445 [Worker-45] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-03-08 15:48:52,504 [Worker-45] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.amitinside:com.amitinside.core.provider:0.0.1-SNAPSHOT @ /Users/AMIT/sandbox_enroute/com.amitinside.core.provider/pom.xml.
+2016-03-08 15:48:52,562 [Worker-45] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /com.amitinside.core.provider/src/main/java
+2016-03-08 15:48:52,562 [Worker-45] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /com.amitinside.core.provider/src/main/resources
+2016-03-08 15:48:52,563 [Worker-45] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /com.amitinside.core.provider/src/test/java
+2016-03-08 15:48:52,563 [Worker-45] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /com.amitinside.core.provider/src/test/resources
+2016-03-08 15:48:52,594 [Worker-45] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2016-03-08 16:04:17,074 [Worker-39] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-03-08 16:04:17,147 [Worker-39] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.amitinside:com.amitinside.core.provider:0.0.1-SNAPSHOT @ /Users/AMIT/sandbox_enroute/com.amitinside.core.provider/pom.xml.
+2016-03-08 16:04:17,222 [Worker-39] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /com.amitinside.core.provider/src/main/java
+2016-03-08 16:04:17,222 [Worker-39] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /com.amitinside.core.provider/src/main/resources
+2016-03-08 16:04:17,223 [Worker-39] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /com.amitinside.core.provider/src/test/java
+2016-03-08 16:04:17,223 [Worker-39] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /com.amitinside.core.provider/src/test/resources
+2016-03-08 16:04:17,271 [Worker-39] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2016-03-08 16:04:58,403 [Worker-38] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/osgi/org.osgi.compendium/5.0.0/org.osgi.compendium-5.0.0-sources.jar
+2016-03-08 16:04:59,019 [Worker-38] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/osgi/org.osgi.compendium/5.0.0/org.osgi.compendium-5.0.0-sources.jar
+2016-03-08 16:04:59,041 [Worker-38] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.osgi:org.osgi.compendium:5.0.0
+2016-03-08 16:55:15,417 [Worker-40] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.amitinside:com.amitinside.pollution.sense.application:0.0.1-SNAPSHOT @ /Users/AMIT/sandbox_enroute/com.amitinside.pollution.sense.application/pom.xml.
+2016-03-08 16:55:15,517 [Worker-40] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /com.amitinside.pollution.sense.application/src/main/java
+2016-03-08 16:55:15,517 [Worker-40] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /com.amitinside.pollution.sense.application/src/main/resources
+2016-03-08 16:55:15,517 [Worker-40] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /com.amitinside.pollution.sense.application/src/test/java
+2016-03-08 16:55:15,517 [Worker-40] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /com.amitinside.pollution.sense.application/src/test/resources
+2016-03-08 17:16:45,396 [Worker-46] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-03-08 17:16:45,478 [Worker-46] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using DEFAULT lifecycle mapping for MavenProject: com.amitinside:com.amitinside.pollution.sense.application:0.0.1-SNAPSHOT @ /Users/AMIT/sandbox_enroute/com.amitinside.pollution.sense.application/pom.xml.
+2016-03-08 17:16:45,580 [Worker-46] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /com.amitinside.pollution.sense.application/src/main/java
+2016-03-08 17:16:45,580 [Worker-46] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /com.amitinside.pollution.sense.application/src/main/resources
+2016-03-08 17:16:45,580 [Worker-46] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /com.amitinside.pollution.sense.application/src/test/java
+2016-03-08 17:16:45,580 [Worker-46] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /com.amitinside.pollution.sense.application/src/test/resources
+2016-03-08 17:16:45,628 [Worker-46] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2016-03-08 17:19:27,594 [Worker-40] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-03-08 17:19:27,639 [Worker-40] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using DEFAULT lifecycle mapping for MavenProject: com.amitinside:com.amitinside.pollution.sense.application:0.0.1-SNAPSHOT @ /Users/AMIT/sandbox_enroute/com.amitinside.pollution.sense.application/pom.xml.
+2016-03-08 17:19:27,733 [Worker-40] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /com.amitinside.pollution.sense.application/src/main/java
+2016-03-08 17:19:27,733 [Worker-40] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /com.amitinside.pollution.sense.application/src/main/resources
+2016-03-08 17:19:27,733 [Worker-40] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /com.amitinside.pollution.sense.application/src/test/java
+2016-03-08 17:19:27,734 [Worker-40] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /com.amitinside.pollution.sense.application/src/test/resources
+2016-03-08 17:19:27,763 [Worker-40] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2016-03-08 18:22:59,787 [main] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache file is not out-of-date. No remote download required.
+2016-03-08 18:23:02,476 [Worker-2] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/AMIT/sandbox_enroute/com.amitinside.core.provider
+2016-03-08 18:23:02,478 [Worker-2] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B install

@@ -1,0 +1,5 @@
+package com.amitinside.pollution.sense.application;
+
+public final class PollutionSense {
+
+}

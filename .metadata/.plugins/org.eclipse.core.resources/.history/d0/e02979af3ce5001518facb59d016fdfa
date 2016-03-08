@@ -1,0 +1,5 @@
+package com.amitinside.mock.data.provider;
+
+public interface IMockDataProvider {
+
+}

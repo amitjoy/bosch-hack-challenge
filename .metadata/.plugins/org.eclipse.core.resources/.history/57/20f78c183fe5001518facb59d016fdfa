@@ -1,0 +1,37 @@
+package com.amitinside.core.impl;
+
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
+
+import org.eclipse.kura.cloud.CloudService;
+import org.osgi.service.component.ComponentContext;
+import org.osgi.service.component.annotations.Activate;
+import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Reference;
+
+import com.amitinside.core.api.IPollutionPublishService;
+import com.amitinside.core.api.PollutionData;
+
+@Component
+public final class PollutionPublishService implements IPollutionPublishService {
+
+	private static final String APP_ID = "Pollution-Publisher";
+
+	private ScheduledExecutorService executors;
+	
+	@Reference
+	private volatile CloudService cloudService;
+
+	@Activate
+	public void activate(final ComponentContext componentContext) {
+		this.executors = Executors.newSingleThreadScheduledExecutor();
+	}
+
+	@Override
+	public void publishData(final PollutionData data) {
+		this.executors.schedule(() -> {
+		}, 1, TimeUnit.SECONDS);
+	}
+
+}

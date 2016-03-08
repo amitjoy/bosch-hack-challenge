@@ -1,0 +1,19 @@
+package com.amitinside.mock.data.provider;
+
+import java.util.Random;
+
+import com.amitinside.core.api.PollutionData;
+
+public final class MockDataProvider {
+
+	private static Random random = new Random();
+
+	public static PollutionData mock() {
+		return new PollutionData.Builder().co(random.nextDouble()).no2(random.nextDouble()).o3(random.nextDouble())
+				.so2(random.nextDouble()).build();
+	}
+
+	private MockDataProvider() {
+	}
+
+}

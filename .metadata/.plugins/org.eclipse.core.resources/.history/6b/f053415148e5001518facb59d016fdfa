@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MetaData xmlns="http://www.osgi.org/xmlns/metatype/v1.2.0"
+	localization="en_us">
+	<OCD id="com.amitinside.core.provider" name="Pollution Data Publisher"
+		description="Subscription Topic configuration">
+
+		<Icon
+			resource="http://icons.iconarchive.com/icons/alecive/flatwoken/128/Apps-Bluetooth-Active-icon.png"
+			size="32" />
+
+		<AD id="pollution.data.mqtt.topic" name="pollution.data.mqtt.topic"
+			type="String" cardinality="0" required="true"
+			default="pollution/data"
+			description="Configurable property to set MQTT Topic to publish Pollution Data" />
+
+	</OCD>
+	<Designate pid="com.amitinside.core.provider">
+		<Object ocdref="com.amitinside.core.provider" />
+	</Designate>
+</MetaData>

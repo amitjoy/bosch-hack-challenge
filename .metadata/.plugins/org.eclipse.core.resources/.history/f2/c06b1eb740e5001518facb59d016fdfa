@@ -1,0 +1,52 @@
+package com.amitinside.core.impl;
+
+import java.util.Map;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
+
+import org.apache.felix.scr.annotations.Component;
+import org.apache.felix.scr.annotations.Reference;
+import org.eclipse.kura.configuration.ConfigurableComponent;
+import org.eclipse.kura.data.DataService;
+import org.osgi.service.component.ComponentContext;
+import org.osgi.service.component.annotations.Activate;
+
+import com.amitinside.core.api.IPollutionPublishService;
+import com.amitinside.core.api.PollutionData;
+
+@Component
+public final class PollutionPublishService implements IPollutionPublishService, ConfigurableComponent {
+
+	private static final String APP_ID = "Pollution-Publisher";
+
+	@Reference
+	private volatile DataService dataService;
+
+	private ScheduledExecutorService executors;
+
+	@Activate
+	public void activate(final ComponentContext componentContext) {
+		this.executors = Executors.newSingleThreadScheduledExecutor();
+	}
+
+	@Activate
+	protected synchronized void activate(final ComponentContext componentContext,
+			final Map<String, Object> properties) {
+		LOGGER.info("Activating Python Bluetooth Milling Machine Component...");
+
+		super.setCloudService(this.m_cloudService);
+		super.activate(componentContext);
+		this.m_properties = properties;
+
+		LOGGER.info("Activating Python Bluetooth Milling Machine Component... Done.");
+	}
+
+	@Override
+	public void publishData(final PollutionData data) {
+		this.executors.schedule(() -> {
+			this.dataService.publish(arg0, arg1, arg2, arg3, arg4);
+		}, 1, TimeUnit.SECONDS);
+	}
+
+}

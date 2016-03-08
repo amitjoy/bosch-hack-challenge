@@ -1,0 +1,11 @@
+package com.amitinside.mock.data.provider;
+
+import com.amitinside.core.api.PollutionData;
+
+public interface IMockDataProvider {
+
+	public static PollutionData mock() {
+		return null;
+	}
+
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.awt.image.ImageProducer"/>
+<fullyQualifiedTypeName name="org.osgi.service.component.annotations.Component"/>
+<fullyQualifiedTypeName name="java.util.concurrent.ExecutorService"/>
+<fullyQualifiedTypeName name="org.osgi.service.component.annotations.Activate"/>
+<fullyQualifiedTypeName name="org.osgi.service.component.ComponentContext"/>
+<fullyQualifiedTypeName name="java.util.concurrent.Executors"/>
+<fullyQualifiedTypeName name="java.util.concurrent.ScheduledExecutorService"/>
+<fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
+<fullyQualifiedTypeName name="org.eclipse.kura.cloud.CloudService"/>
+<fullyQualifiedTypeName name="org.osgi.service.component.annotations.Reference"/>
+<fullyQualifiedTypeName name="org.apache.felix.scr.annotations.Component"/>
+<fullyQualifiedTypeName name="org.apache.felix.scr.annotations.Reference"/>
+<fullyQualifiedTypeName name="org.eclipse.kura.cloud.CloudClient"/>
+<fullyQualifiedTypeName name="org.eclipse.kura.configuration.ConfigurableComponent"/>
+<fullyQualifiedTypeName name="org.apache.felix.scr.annotations.Activate"/>
+<fullyQualifiedTypeName name="org.apache.felix.scr.annotations.Deactivate"/>
+<fullyQualifiedTypeName name="com.amitinside.mock.data.provider.IMockDataProvider"/>
+<fullyQualifiedTypeName name="java.util.concurrent.Future"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="com.amitinside.core.api.PollutionData"/>
+<fullyQualifiedTypeName name="com.amitinside.core.api.PollutionData.Builder"/>
+<fullyQualifiedTypeName name="org.osgi.framework.BundleActivator"/>
+<fullyQualifiedTypeName name="com.amitinside.core.api.IPollutionPublishService"/>
+<fullyQualifiedTypeName name="com.amitinside.mock.data.provider.MockDataProvider"/>
+</qualifiedTypeNameHistroy>

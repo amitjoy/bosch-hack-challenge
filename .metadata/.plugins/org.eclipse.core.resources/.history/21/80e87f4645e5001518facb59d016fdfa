@@ -1,0 +1,75 @@
+package com.amitinside.core.impl;
+
+import java.util.Map;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
+
+import org.apache.felix.scr.annotations.Activate;
+import org.apache.felix.scr.annotations.Component;
+import org.apache.felix.scr.annotations.Deactivate;
+import org.apache.felix.scr.annotations.Reference;
+import org.eclipse.kura.configuration.ConfigurableComponent;
+import org.eclipse.kura.data.DataService;
+import org.osgi.service.component.ComponentContext;
+
+import com.amitinside.core.api.IPollutionPublishService;
+import com.amitinside.core.api.PollutionData;
+import com.amitinside.mock.data.provider.IMockDataProvider;
+
+@Component
+public final class PollutionPublishService implements IPollutionPublishService, ConfigurableComponent {
+
+	private static final String APP_ID = "Pollution-Publisher";
+
+	private static final String MQTT_TOPIC = "pollution.data.mqtt.topic";
+
+	@Reference(bind = "bindDataService", unbind = "unbindDataService")
+	private volatile DataService dataService;
+
+	private Map<String, Object> m_properties;
+
+	private ScheduledExecutorService worker;
+	
+	@Activate
+	protected synchronized void activate(final ComponentContext componentContext,
+			final Map<String, Object> properties) {
+		this.worker = Executors.newSingleThreadScheduledExecutor();
+		this.m_properties = properties;
+		this.extractConfiguration();
+	}
+
+	public synchronized void bindDataService(final DataService dataService) {
+		if (this.dataService == null) {
+			this.dataService = dataService;
+		}
+	}
+
+	@Deactivate
+	protected synchronized void deactivate(final ComponentContext context) {
+		this.worker.shutdown();
+	}
+
+	private void extractConfiguration() {
+		this.m_properties.get(MQTT_TOPIC);
+	}
+
+	@Override
+	public void publishData(final PollutionData data) {
+		this.worker.schedule(() -> {
+			// this.dataService.publish(arg0, arg1, arg2, arg3, arg4);
+		}, 1, TimeUnit.SECONDS);
+	}
+
+	public synchronized void unbindDataService(final DataService dataService) {
+		if (this.dataService == dataService) {
+			this.dataService = null;
+		}
+	}
+
+	public void updated(final Map<String, Object> properties) {
+		this.m_properties = properties;
+		this.extractConfiguration();
+	}
+
+}

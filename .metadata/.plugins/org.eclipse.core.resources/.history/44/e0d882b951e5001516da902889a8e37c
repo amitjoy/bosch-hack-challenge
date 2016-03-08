@@ -1,0 +1,75 @@
+package com.amitinside.core.api;
+
+public final class DataPayload {
+
+	public static class Builder {
+
+		private double co;
+		private double latitude;
+		private double longitude;
+		private double no2;
+		private double o3;
+		private double so2;
+
+		public DataPayload build() {
+			return new DataPayload(this.co, this.no2, this.o3, this.so2, this.latitude, this.longitude);
+		}
+
+		public Builder co(final double value) {
+			this.co = value;
+			return this;
+		}
+
+		public Builder no2(final double value) {
+			this.no2 = value;
+			return this;
+		}
+
+		public Builder o3(final double value) {
+			this.o3 = value;
+			return this;
+		}
+
+		public Builder so2(final double value) {
+			this.co = value;
+			return this;
+		}
+
+	}
+
+	private final double co;
+	private final double latitude;
+	private final double longitude;
+	private final double no2;
+	private final double o3;
+
+	private final double so2;
+
+	public DataPayload(final double co, final double no2, final double o3, final double so2, final double latitude,
+			final double longitude) {
+		super();
+		this.co = co;
+		this.no2 = no2;
+		this.o3 = o3;
+		this.so2 = so2;
+		this.latitude = latitude;
+		this.longitude = longitude;
+	}
+
+	public double getCo() {
+		return this.co;
+	}
+
+	public double getNo2() {
+		return this.no2;
+	}
+
+	public double getO3() {
+		return this.o3;
+	}
+
+	public double getSo2() {
+		return this.so2;
+	}
+
+}

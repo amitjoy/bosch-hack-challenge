@@ -1,0 +1,49 @@
+package com.amitinside.core.impl;
+
+import java.util.Map;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
+
+import org.apache.felix.scr.annotations.Activate;
+import org.apache.felix.scr.annotations.Component;
+import org.apache.felix.scr.annotations.Deactivate;
+import org.apache.felix.scr.annotations.Reference;
+import org.eclipse.kura.configuration.ConfigurableComponent;
+import org.eclipse.kura.data.DataService;
+import org.osgi.service.component.ComponentContext;
+
+import com.amitinside.core.api.IPollutionPublishService;
+import com.amitinside.core.api.PollutionData;
+
+@Component
+public final class PollutionPublishService implements IPollutionPublishService, ConfigurableComponent {
+
+	private static final String APP_ID = "Pollution-Publisher";
+
+	@Reference
+	private volatile DataService dataService;
+
+	private Map<String, Object> m_properties;
+
+	private ScheduledExecutorService worker;
+
+	@Activate
+	public void activate(final ComponentContext componentContext, final Map<String, Object> properties) {
+		this.worker = Executors.newSingleThreadScheduledExecutor();
+		this.m_properties = properties;
+	}
+
+	@Deactivate
+	protected void deactivate(final ComponentContext context) {
+		this.worker.shutdown();
+	}
+
+	@Override
+	public void publishData(final PollutionData data) {
+		this.worker.schedule(() -> {
+			// this.dataService.publish(arg0, arg1, arg2, arg3, arg4);
+		}, 1, TimeUnit.SECONDS);
+	}
+
+}

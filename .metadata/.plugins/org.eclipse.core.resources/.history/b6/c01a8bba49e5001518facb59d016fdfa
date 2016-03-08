@@ -1,0 +1,31 @@
+package com.amitinside.pollution.sense.application;
+
+import java.util.Map;
+import java.util.concurrent.Executors;
+
+import org.apache.felix.scr.annotations.Activate;
+import org.apache.felix.scr.annotations.Component;
+import org.apache.felix.scr.annotations.Reference;
+import org.eclipse.kura.data.DataService;
+import org.osgi.service.component.ComponentContext;
+
+import com.amitinside.core.api.IPollutionPublishService;
+
+@Component
+public final class PollutionSense {
+
+	@Reference(bind = "bindPollutionPublishService", unbind = "unbindPollutionPublishService")
+	private volatile IPollutionPublishService pollutionPublishService;
+
+	@Activate
+	protected synchronized void activate(final ComponentContext componentContext,
+			final Map<String, Object> properties) {
+	}
+
+	public synchronized void bindDataService(final DataService dataService) {
+	}
+	
+	public synchronized void unbindDataService(final DataService dataService) {
+	}
+
+}

@@ -1,0 +1,7 @@
+package com.amitinside.core.api;
+
+public final Interface IPollutionPublishService {
+
+	void publishData(PollutionData data);
+
+}

@@ -1,0 +1,5 @@
+buildLogging=2
+eclipse.preferences.version=1
+headlessBuildPlugins=Gradle
+noAskPackageInfo=true
+versionControlIgnoresPlugins=Git

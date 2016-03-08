@@ -1,0 +1,25 @@
+package com.amitinside.pollution.sense.application;
+
+import java.util.Map;
+import java.util.concurrent.Executors;
+
+import org.apache.felix.scr.annotations.Activate;
+import org.apache.felix.scr.annotations.Component;
+import org.apache.felix.scr.annotations.Reference;
+import org.osgi.service.component.ComponentContext;
+
+@Component
+public final class PollutionSense {
+
+	@Reference(bind = "bindDataService", unbind = "unbindDataService")
+	private volatile DataService dataService;
+
+	@Activate
+	protected synchronized void activate(final ComponentContext componentContext,
+			final Map<String, Object> properties) {
+		this.worker = Executors.newSingleThreadScheduledExecutor();
+		this.m_properties = properties;
+		this.extractConfiguration();
+	}
+
+}

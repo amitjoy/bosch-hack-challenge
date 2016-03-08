@@ -1,0 +1,38 @@
+package com.amitinside.core.api;
+
+public final class PollutionData {
+
+	private final double co;
+	private final double no2;
+	private final double o3;
+	private final double so2;
+
+	public PollutionData(final double co, final double no2, final double o3, final double so2) {
+		super();
+		this.co = co;
+		this.no2 = no2;
+		this.o3 = o3;
+		this.so2 = so2;
+	}
+
+	public static class Builder() {
+
+	}
+
+	public double getCo() {
+		return this.co;
+	}
+
+	public double getNo2() {
+		return this.no2;
+	}
+
+	public double getO3() {
+		return this.o3;
+	}
+
+	public double getSo2() {
+		return this.so2;
+	}
+
+}

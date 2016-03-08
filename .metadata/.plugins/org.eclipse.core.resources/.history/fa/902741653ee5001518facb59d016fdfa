@@ -1,0 +1,16 @@
+package com.amitinside.core.impl;
+
+import com.amitinside.core.api.IPollutionPublishService;
+import com.amitinside.core.api.PollutionData;
+
+public final class PollutionPublishService implements IPollutionPublishService {
+
+	private static final String APP_ID = "Pollution-Publisher";
+
+	@Override
+	public void publishData(final PollutionData data) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
