@@ -8,7 +8,6 @@ import org.apache.felix.scr.annotations.Reference;
 import org.osgi.service.component.ComponentContext;
 
 import com.amitinside.core.api.IPollutionPublishService;
-import com.amitinside.mock.data.provider.MockDataProvider;
 
 @Component
 public final class PollutionSense {
@@ -19,7 +18,7 @@ public final class PollutionSense {
 	@Activate
 	protected synchronized void activate(final ComponentContext componentContext,
 			final Map<String, Object> properties) {
-		this.pollutionPublishService.publishData(MockDataProvider.mock());
+		this.pollutionPublishService.publishData();
 	}
 
 	public synchronized void bindPollutionPublishService(final IPollutionPublishService pollutionPublishService) {

@@ -18,6 +18,7 @@ import org.osgi.service.component.ComponentContext;
 
 import com.amitinside.core.api.DataPayload;
 import com.amitinside.core.api.IPollutionPublishService;
+import com.amitinside.mock.data.provider.MockDataProvider;
 
 @Component(name = "com.amitinside.core.provider", immediate = true)
 @Service(value = { IPollutionPublishService.class })
@@ -64,7 +65,7 @@ public final class PollutionPublishService implements IPollutionPublishService, 
 	}
 
 	@Override
-	public void publishData(final DataPayload data) {
+	public void publishData() {
 
 		if (this.handle != null) {
 			this.handle.cancel(true);
@@ -72,7 +73,9 @@ public final class PollutionPublishService implements IPollutionPublishService, 
 
 		this.handle = this.worker.scheduleWithFixedDelay(() -> {
 			try {
-				this.dataService.publish(this.topic, this.wrapData(data).getBytes(), 2, true, 5);
+				final DataPayload data = MockDataProvider.mock();
+				System.out.println("Pollution Data ==>" + data.toString());
+				this.dataService.publish(this.topic, data.toString().getBytes(), 2, true, 5);
 			} catch (final Exception e) {
 				e.printStackTrace();
 			}
@@ -92,11 +95,6 @@ public final class PollutionPublishService implements IPollutionPublishService, 
 			this.extractConfiguration();
 			properties.forEach((k, v) -> System.out.println(k + " :" + v));
 		}
-	}
-
-	private String wrapData(final DataPayload pollutionData) {
-		return pollutionData.getCo() + ":" + pollutionData.getNo2() + ":" + pollutionData.getO3() + ":"
-				+ pollutionData.getSo2() + ":" + pollutionData.getLatitude() + ":" + pollutionData.getLongitude();
 	}
 
 }

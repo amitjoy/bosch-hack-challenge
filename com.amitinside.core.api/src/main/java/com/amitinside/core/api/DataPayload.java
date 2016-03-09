@@ -90,4 +90,9 @@ public final class DataPayload {
 		return this.so2;
 	}
 
+	@Override
+	public String toString() {
+		return this.co + ":" + this.no2 + ":" + this.o3 + ":" + this.so2 + ":" + this.latitude + ":" + this.longitude;
+	}
+
 }
