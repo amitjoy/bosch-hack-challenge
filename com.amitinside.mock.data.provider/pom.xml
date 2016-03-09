@@ -44,6 +44,7 @@
 						<Bundle-Vendor>TU Munich</Bundle-Vendor>
 						<Bundle-Developer>Amit Kumar Mondal</Bundle-Developer>
 						<_dsannotations>*</_dsannotations>
+						<_noee>true</_noee>
 					</instructions>
 				</configuration>
 			</plugin>
