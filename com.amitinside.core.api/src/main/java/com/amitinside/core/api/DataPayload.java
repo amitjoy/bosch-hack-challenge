@@ -41,7 +41,7 @@ public final class DataPayload {
 		}
 
 		public Builder so2(final double value) {
-			this.co = value;
+			this.so2 = value;
 			return this;
 		}
 
