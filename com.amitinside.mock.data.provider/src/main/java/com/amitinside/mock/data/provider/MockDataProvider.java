@@ -13,12 +13,9 @@ public final class MockDataProvider {
 	}
 
 	public static DataPayload mock() {
-		final double longitude = Math.random() * Math.PI * 2;
-		final double latitude = Math.acos((Math.random() * 2) - 1);
-
 		return new DataPayload.Builder().co(doubleRandomInclusive(0, 3)).no2(doubleRandomInclusive(1, 4))
-				.o3(doubleRandomInclusive(2, 5)).so2(doubleRandomInclusive(3, 6)).latitude(latitude)
-				.longitude(longitude).build();
+				.o3(doubleRandomInclusive(2, 5)).so2(doubleRandomInclusive(3, 6))
+				.latitude(doubleRandomInclusive(52, 53)).longitude(doubleRandomInclusive(13, 14)).build();
 	}
 
 	private MockDataProvider() {
