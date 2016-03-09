@@ -9,7 +9,9 @@ import java.util.concurrent.TimeUnit;
 import org.apache.felix.scr.annotations.Activate;
 import org.apache.felix.scr.annotations.Component;
 import org.apache.felix.scr.annotations.Deactivate;
+import org.apache.felix.scr.annotations.Modified;
 import org.apache.felix.scr.annotations.Reference;
+import org.apache.felix.scr.annotations.Service;
 import org.eclipse.kura.configuration.ConfigurableComponent;
 import org.eclipse.kura.data.DataService;
 import org.osgi.service.component.ComponentContext;
@@ -17,7 +19,8 @@ import org.osgi.service.component.ComponentContext;
 import com.amitinside.core.api.DataPayload;
 import com.amitinside.core.api.IPollutionPublishService;
 
-@Component
+@Component(name = "com.amitinside.core.provider", immediate = true)
+@Service(value = { IPollutionPublishService.class })
 public final class PollutionPublishService implements IPollutionPublishService, ConfigurableComponent {
 
 	private static final String DATA_PUBLISH_RATE = "pollution.data.rate";
@@ -41,8 +44,7 @@ public final class PollutionPublishService implements IPollutionPublishService, 
 	protected synchronized void activate(final ComponentContext componentContext,
 			final Map<String, Object> properties) {
 		this.worker = Executors.newSingleThreadScheduledExecutor();
-		this.m_properties = properties;
-		this.extractConfiguration();
+		this.updated(properties);
 	}
 
 	public synchronized void bindDataService(final DataService dataService) {
@@ -58,6 +60,7 @@ public final class PollutionPublishService implements IPollutionPublishService, 
 
 	private void extractConfiguration() {
 		this.topic = (String) this.m_properties.get(MQTT_TOPIC);
+		System.out.println("====>" + this.m_properties);
 		this.rate = (int) this.m_properties.get(DATA_PUBLISH_RATE);
 	}
 
@@ -83,9 +86,13 @@ public final class PollutionPublishService implements IPollutionPublishService, 
 		}
 	}
 
-	public void updated(final Map<String, Object> properties) {
+	@Modified
+	public synchronized void updated(final Map<String, Object> properties) {
 		this.m_properties = properties;
-		this.extractConfiguration();
+		if ((properties != null) && !properties.isEmpty()) {
+			this.extractConfiguration();
+			properties.forEach((k, v) -> System.out.println(k + " :" + v));
+		}
 	}
 
 	private String wrapData(final DataPayload pollutionData) {

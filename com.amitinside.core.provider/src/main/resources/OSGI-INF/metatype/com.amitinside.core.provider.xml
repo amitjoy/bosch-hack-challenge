@@ -9,12 +9,12 @@
 			resource="http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/128/Status-weather-clouds-icon.png"
 			size="32" />
 
-		<AD id="pollution.data.mqtt.topic" name="MQTT Topic to pusblish data"
+		<AD id="pollution.data.mqtt.topic" name="pollution.data.mqtt.topic"
 			type="String" cardinality="0" required="true" default="pollution/data"
 			description="Configurable property to set MQTT Topic to publish Pollution Data" />
-		
-		<AD id="pollution.data.rate" name="Data Publish Rate"
-			type="Integer" cardinality="0" required="true" default="2"
+
+		<AD id="pollution.data.rate" name="pollution.data.rate" type="Integer"
+			cardinality="0" required="true" default="2" min="1"
 			description="Configurable property to set data publish rate (in seconds)" />
 
 	</OCD>
