@@ -2,8 +2,8 @@ package com.amitinside.core.impl;
 
 import java.util.Map;
 import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
 import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.felix.scr.annotations.Activate;
@@ -30,7 +30,7 @@ public final class PollutionPublishService implements IPollutionPublishService, 
 	@Reference(bind = "bindDataService", unbind = "unbindDataService")
 	private volatile DataService dataService;
 
-	private Future<?> handle;
+	private ScheduledFuture<?> handle;
 
 	private Map<String, Object> m_properties;
 
@@ -43,7 +43,7 @@ public final class PollutionPublishService implements IPollutionPublishService, 
 	@Activate
 	protected synchronized void activate(final ComponentContext componentContext,
 			final Map<String, Object> properties) {
-		this.worker = Executors.newSingleThreadScheduledExecutor();
+		this.worker = Executors.newScheduledThreadPool(10);
 		this.updated(properties);
 	}
 
@@ -60,7 +60,6 @@ public final class PollutionPublishService implements IPollutionPublishService, 
 
 	private void extractConfiguration() {
 		this.topic = (String) this.m_properties.get(MQTT_TOPIC);
-		System.out.println("====>" + this.m_properties);
 		this.rate = (int) this.m_properties.get(DATA_PUBLISH_RATE);
 	}
 
@@ -71,13 +70,13 @@ public final class PollutionPublishService implements IPollutionPublishService, 
 			this.handle.cancel(true);
 		}
 
-		this.handle = this.worker.schedule(() -> {
+		this.handle = this.worker.scheduleWithFixedDelay(() -> {
 			try {
 				this.dataService.publish(this.topic, this.wrapData(data).getBytes(), 2, true, 5);
 			} catch (final Exception e) {
 				e.printStackTrace();
 			}
-		}, this.rate, TimeUnit.SECONDS);
+		}, 2, this.rate, TimeUnit.SECONDS);
 	}
 
 	public synchronized void unbindDataService(final DataService dataService) {
